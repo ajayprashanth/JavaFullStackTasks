@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Villa | Luxury Homes & Resorts</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span><i class="fa fa-envelope"></i> info@company.com</span>
+    <span><i class="fa fa-map-marker-alt"></i> Bangalore</span>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">VILLA</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="properties.html">Properties</a></li>
+      <li><a href="propertydetails.html">Property Details</a></li>
+      <li><a href="Contact.html">Contact Us</a></li>
+      <li><a href="Contact.html" class="btn-schedule-nav">Schedule a Visit</a></li>
+    </ul>
+    <div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <p class="hero-eyebrow">| Featured</p>
+      <h1 class="hero-title">HURRY! GET THE <em>BEST VILLA</em> FOR YOU</h1>
+      <p class="hero-desc">Best Apartment &amp; Sea View. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae animi, quos quasi cupiditate eveniet!</p>
+      <ul class="hero-features">
+        <li>Private Swimming Pool</li>
+        <li>Landscaped Garden View</li>
+        <li>24/7 Security &amp; CCTV</li>
+        <li>Covered Car Parking</li>
+      </ul>
+      <a href="Contact.html" class="btn-primary">Schedule a Visit</a>
+    </div>
+    <div class="hero-img-wrap">
+      <img src="Assests/featured.jpg" alt="Featured Villa" onerror="this.src='https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80'"/>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Bar -->
+<div class="stats-bar">
+  <div class="container stats-inner">
+    <div class="stat-item"><div class="stat-num">250 m²</div><div class="stat-label">Area</div></div>
+    <div class="stat-item"><div class="stat-num">34</div><div class="stat-label">Buildings</div></div>
+    <div class="stat-item"><div class="stat-num">12</div><div class="stat-label">Yrs Experience</div></div>
+    <div class="stat-item"><div class="stat-num">24</div><div class="stat-label">Awards</div></div>
+  </div>
+</div>
+
+<!-- Premium Features -->
+<section class="features-section">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow">| Explore</p>
+      <h2 class="section-title">Discover Our Premium Features</h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-home"></i></div>
+        <h4>Luxury Villas</h4>
+        <p>Spacious private villas with world-class amenities and panoramic views.</p>
+        <span class="feature-tag">Tap to explore</span>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-water"></i></div>
+        <h4>Sea View Apartments</h4>
+        <p>Modern apartments with stunning ocean vistas and designer interiors.</p>
+        <span class="feature-tag">Tap to explore</span>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-city"></i></div>
+        <h4>Premium Penthouses</h4>
+        <p>Sky-high living with rooftop terraces and exclusive building access.</p>
+        <span class="feature-tag">Tap to explore</span>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-film"></i></div>
+        <h4>Home Theatre</h4>
+        <p>State-of-the-art entertainment rooms for the ultimate movie experience.</p>
+        <span class="feature-tag">Tap to explore</span>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+        <h4>Smart Home Security</h4>
+        <p>24/7 CCTV surveillance and smart locks for complete peace of mind.</p>
+        <span class="feature-tag">Tap to explore</span>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-swimming-pool"></i></div>
+        <h4>Private Pools</h4>
+        <p>Enjoy exclusive access to temperature-controlled private swimming pools.</p>
+        <span class="feature-tag">Tap to explore</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video Section -->
+<section class="video-section">
+  <div class="container">
+    <p class="section-eyebrow">| Video View</p>
+    <h2 class="section-title" style="color:#fff;">GET A DIFFERENT VIEW.<br/>&amp; DIFFERENT FEELING</h2>
+    <div class="video-frame">
+      <img src="Assests/video-frame.jpg" alt="Video Preview" onerror="this.src='https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80'"/>
+      <div class="play-btn"><span><i class="fas fa-play"></i></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Properties -->
+<section class="home-props">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow">| Properties</p>
+      <h2 class="section-title">We Provide the Best Property You Like</h2>
+    </div>
+    <div class="properties-grid">
+      <div class="property-card">
+        <div class="card-img-wrap">
+          <img src="Assests/property-01.jpg" alt="Luxury Villa" onerror="this.src='https://images.unsplash.com/photo-1613977257363-707ba9348227?w=600&q=80'"/>
+          <span class="card-badge">Villa House</span>
+        </div>
+        <div class="card-body">
+          <h3>Luxury Villa</h3>
+          <p class="card-price">$2,264.00 <span>/ month</span></p>
+          <p class="card-address"><i class="fas fa-map-marker-alt"></i> 18 New Street Miami, OR 97219</p>
+          <a href="propertydetails.html" class="btn-card">Schedule a Visit</a>
+        </div>
+      </div>
+      <div class="property-card">
+        <div class="card-img-wrap">
+          <img src="Assests/property-02.jpg" alt="Luxury Villa" onerror="this.src='https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80'"/>
+          <span class="card-badge">Apartment</span>
+        </div>
+        <div class="card-body">
+          <h3>Luxury Villa</h3>
+          <p class="card-price">$1,180.00 <span>/ month</span></p>
+          <p class="card-address"><i class="fas fa-map-marker-alt"></i> 18 New Street Miami, OR 97219</p>
+          <a href="propertydetails.html" class="btn-card">Schedule a Visit</a>
+        </div>
+      </div>
+      <div class="property-card">
+        <div class="card-img-wrap">
+          <img src="Assests/property-03.jpg" alt="Luxury Villa" onerror="this.src='https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80'"/>
+          <span class="card-badge">Penthouse</span>
+        </div>
+        <div class="card-body">
+          <h3>Luxury Villa</h3>
+          <p class="card-price">$1,460.00 <span>/ month</span></p>
+          <p class="card-address"><i class="fas fa-map-marker-alt"></i> 18 New Street Miami, OR 97219</p>
+          <a href="propertydetails.html" class="btn-card">Schedule a Visit</a>
+        </div>
+      </div>
+      <div class="property-card">
+        <div class="card-img-wrap">
+          <img src="Assests/property-04.jpg" alt="Luxury Villa" onerror="this.src='https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80'"/>
+          <span class="card-badge">Villa House</span>
+        </div>
+        <div class="card-body">
+          <h3>Luxury Villa</h3>
+          <p class="card-price">$584,500 <span>/ month</span></p>
+          <p class="card-address"><i class="fas fa-map-marker-alt"></i> 18 New Street Miami, OR 97219</p>
+          <a href="propertydetails.html" class="btn-card">Schedule a Visit</a>
+        </div>
+      </div>
+      <div class="property-card">
+        <div class="card-img-wrap">
+          <img src="Assests/property-05.jpg" alt="Luxury Villa" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80'"/>
+          <span class="card-badge">Apartment</span>
+        </div>
+        <div class="card-body">
+          <h3>Luxury Villa</h3>
+          <p class="card-price">$925,600 <span>/ month</span></p>
+          <p class="card-address"><i class="fas fa-map-marker-alt"></i> 18 New Street Miami, OR 97219</p>
+          <a href="propertydetails.html" class="btn-card">Schedule a Visit</a>
+        </div>
+      </div>
+      <div class="property-card">
+        <div class="card-img-wrap">
+          <img src="Assests/property-06.jpg" alt="Luxury Villa" onerror="this.src='https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&q=80'"/>
+          <span class="card-badge">Penthouse</span>
+        </div>
+        <div class="card-body">
+          <h3>Luxury Villa</h3>
+          <p class="card-price">$450.00 <span>/ month</span></p>
+          <p class="card-address"><i class="fas fa-map-marker-alt"></i> 18 New Street Miami, OR 97219</p>
+          <a href="propertydetails.html" class="btn-card">Schedule a Visit</a>
+        </div>
+      </div>
+    </div>
+    <div class="view-all-wrap">
+      <a href="properties.html" class="btn-outline">View All Properties →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>© 2003 Villa Agency Co, LTD. All Rights Reserved. Design: Jeevan</p>
+</footer>
+
+</body>
+</html>

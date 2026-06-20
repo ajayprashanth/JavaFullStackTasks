@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Property Details - Villa Agency</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span><i class="fa fa-envelope"></i> info@company.com</span>
+    <span><i class="fa fa-map-marker-alt"></i> Bangalore</span>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">VILLA</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="properties.html">Properties</a></li>
+      <li><a href="propertydetails.html" class="active">Property Details</a></li>
+      <li><a href="Contact.html">Contact Us</a></li>
+      <li><a href="Contact.html" class="btn-schedule-nav">Schedule a Visit</a></li>
+    </ul>
+    <div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</nav>
+
+<section class="page-banner">
+  <div class="banner-overlay">
+    <p class="banner-eyebrow">Explore This</p>
+    <h1 class="banner-title">PROPERTY DETAILS</h1>
+  </div>
+</section>
+
+<section class="details-section">
+  <div class="container">
+    <div class="details-grid">
+
+      <!-- Left: Main Info -->
+      <div>
+        <img class="detail-main-img" src="Assests/property-01.jpg" alt="Property" onerror="this.src='https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80'"/>
+        <div class="detail-badges" style="margin-top:22px;">
+          <span class="detail-badge gold">Apartment</span>
+          <span class="detail-badge"><i class="fas fa-ruler-combined"></i> 450 m²</span>
+          <span class="detail-badge"><i class="fas fa-file-contract"></i> Contract</span>
+          <span class="detail-badge"><i class="fas fa-credit-card"></i> Payment</span>
+          <span class="detail-badge"><i class="fas fa-shield-alt"></i> Safety</span>
+        </div>
+        <p class="detail-address"><i class="fas fa-map-marker-alt"></i> 24 New Street Miami, OR 24560</p>
+        <h2 style="font-family:'Playfair Display',serif;font-size:1.7rem;color:#1a1a2e;margin-bottom:14px;">Luxury Sea View Apartment</h2>
+        <p class="detail-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error iure consequatur dolore quo illo id ut eum nesciunt. Soluta vitae assumenda accusantium molestiae labore saepe fugiat, porro debitis autem et. This premium property features floor-to-ceiling windows, private balconies, and access to resort-style amenities.</p>
+
+        <!-- Info Icons Row -->
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:10px;">
+          <div style="text-align:center;background:#f7f5f0;border-radius:8px;padding:18px 10px;">
+            <i class="fas fa-ruler-combined" style="color:#c9a84c;font-size:1.4rem;margin-bottom:8px;display:block;"></i>
+            <div style="font-size:.78rem;color:#888;">Area</div>
+            <div style="font-weight:700;color:#1a1a2e;font-size:.95rem;">450 m²</div>
+          </div>
+          <div style="text-align:center;background:#f7f5f0;border-radius:8px;padding:18px 10px;">
+            <i class="fas fa-bed" style="color:#c9a84c;font-size:1.4rem;margin-bottom:8px;display:block;"></i>
+            <div style="font-size:.78rem;color:#888;">Rooms</div>
+            <div style="font-weight:700;color:#1a1a2e;font-size:.95rem;">4 BHK</div>
+          </div>
+          <div style="text-align:center;background:#f7f5f0;border-radius:8px;padding:18px 10px;">
+            <i class="fas fa-car" style="color:#c9a84c;font-size:1.4rem;margin-bottom:8px;display:block;"></i>
+            <div style="font-size:.78rem;color:#888;">Parking</div>
+            <div style="font-weight:700;color:#1a1a2e;font-size:.95rem;">2 Slots</div>
+          </div>
+          <div style="text-align:center;background:#f7f5f0;border-radius:8px;padding:18px 10px;">
+            <i class="fas fa-building" style="color:#c9a84c;font-size:1.4rem;margin-bottom:8px;display:block;"></i>
+            <div style="font-size:.78rem;color:#888;">Floor</div>
+            <div style="font-weight:700;color:#1a1a2e;font-size:.95rem;">26th</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Sidebar -->
+      <div class="detail-sidebar">
+        <p class="section-eyebrow" style="margin-bottom:6px;">| Best Deal</p>
+        <h3 class="sidebar-title">Find Your Best Deal<br/>Right Now!</h3>
+        <p class="sidebar-subtitle">Choose a property type below</p>
+
+        <div class="sidebar-tabs">
+          <div class="sidebar-tab active" onclick="setTab(this)">Apartment</div>
+          <div class="sidebar-tab" onclick="setTab(this)">Villa House</div>
+          <div class="sidebar-tab" onclick="setTab(this)">Penthouse</div>
+        </div>
+
+        <ul class="spec-list">
+          <li><span class="spec-label">Total Flat Surface</span><span class="spec-val">185 m²</span></li>
+          <li><span class="spec-label">Floor Number</span><span class="spec-val">26th</span></li>
+          <li><span class="spec-label">Number of Rooms</span><span class="spec-val">4</span></li>
+          <li><span class="spec-label">Parking Available</span><span class="spec-val">Yes</span></li>
+          <li><span class="spec-label">Payment Process</span><span class="spec-val">Bank</span></li>
+        </ul>
+
+        <img class="sidebar-img" src="Assests/property-05.jpg" alt="Property" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80'"/>
+
+        <p class="sidebar-extra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quaerat officiis minima modi placeat maxime laudantium voluptatum exercitationem odio possimus!</p>
+
+        <p style="font-size:1.4rem;font-weight:700;color:#c9a84c;margin-bottom:16px;">$2,264 <span style="font-size:.8rem;color:#888;font-weight:400;">/ month</span></p>
+        <a href="Contact.html" class="btn-full">Schedule a Visit</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Copyright © 2003 Villa Agency Co, LTD. All Rights Reserved. Design: Jeevan</p>
+</footer>
+
+<script>
+function setTab(el) {
+  document.querySelectorAll('.sidebar-tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+}
+</script>
+</body>
+</html>
